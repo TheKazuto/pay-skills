@@ -38,18 +38,6 @@
           "content": {
             "application/json": {
               "schema": { "$ref": "#/components/schemas/JsonRpcRequest" },
-              "example": {
-                "jsonrpc": "2.0",
-                "id": 1,
-                "method": "tools/call",
-                "params": {
-                  "name": "execute_intent",
-                  "arguments": {
-                    "intent": "get_token_price",
-                    "parameters": { "inputMint": "So11111111111111111111111111111111111111112" }
-                  }
-                }
-              },
               "examples": {
                 "getTokenPricePaid": {
                   "summary": "Read a token price (paid, returns 402 until payment). Canonical paid request.",
